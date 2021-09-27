@@ -1,0 +1,57 @@
+main {
+    position: relative;
+    top: 10.5%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color: rgba(100, 99, 104, 0.35);
+}
+
+main div {
+    width: available;
+    height: available;
+}
+
+/*IMAGE WITH BUTTON*/
+.button-container {
+    display: inline-block;
+    position: relative;
+}
+
+.button-container button {
+    position: absolute;
+    bottom: 53.5%;
+    right: 42%;
+    background-color: #646368;
+    border-radius: 20px;
+    color: #05c000;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Trebuchet MS", serif;
+}
+
+.button-container a:hover {
+    color: black;
+}
+
+
+/*CARDS*/
+.card-div {
+    border: none;
+}
+
+.div-container-col {
+    width: 500px;
+    margin: 20px 50px 20px 50px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
