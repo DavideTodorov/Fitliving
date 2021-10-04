@@ -8,6 +8,8 @@ public class FitlivingApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(FitlivingApplication.class, args);
+
+
     }
 
 }
