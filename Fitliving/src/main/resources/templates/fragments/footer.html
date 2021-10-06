@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles/header-footer-style.css">
+</head>
+<body>
+
+<div th:fragment="footer">
+
+    <div style="background-color: #212529">
+        <ul class="nav"
+            style="padding:10px 20px 0px 20px; font-size: 25px; justify-content: center">
+            <li class="nav-item">
+                <a class="nav-link" href="/index" style="color: #32ff0a">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/aboutUs" style="color: #32ff0a">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/classes" style="color: #32ff0a">Classes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/forum" style="color: #32ff0a">Forum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact-us" style="color: #32ff0a">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/faq" style="color: #32ff0a">FAQ</a>
+            </li>
+        </ul>
+        <div class="tab-content ">
+            <div class="tab-pane show active"
+                 style="text-align: center; font-size: 20px; padding: 20px; color: #b0afb4">
+                Helping you with your fitness goals is our mission. Our team of specially trained staff are ready to
+                help you live long and healthy life.
+            </div>
+            <div style="margin-bottom: 15px;text-align: center; font-size: 10px; color: #b0afb4">&copy; Copyright by
+                Davide Todorov. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

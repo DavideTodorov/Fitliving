@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="styles/header-footer-style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<div th:fragment="navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+        <a class="navbar-brand" href="/index"><img style="margin-left:10px; height: 60px" src="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #212529">
+            <span class="navbar-toggler-icon navbar-dark" style="color: #32ff0a"></span>
+        </button>
+
+        <div class="container-fluid nav-container text-success " style="margin-left: 100px">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-style" style="color: #32ff0a">
+                    <li class="nav-item ">
+                        <a class="nav-link hover-effect" href="/aboutUs" style="color: #32ff0a">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="/classes" style="color: #32ff0a">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="/forum" style="color: #32ff0a">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="/contact-us" style="color: #32ff0a">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="/faq" style="color: #32ff0a">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="" style="color: #32ff0a">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
