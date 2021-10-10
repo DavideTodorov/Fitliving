@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitliving - Book classes</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles/header-footer-style.css">
+    <link rel="stylesheet" href="styles/bookClasses.css">
+</head>
+<body>
+
+<header>
+    <div th:include="fragments/navbar :: navbar">Navbar</div>
+</header>
+
+
+<main>
+
+    <form id= "form" class="bookForm" method="post" th:action="@{/bookClasses}">
+        <div class="row" style="margin: 0% 0 0 29% ">
+            <div id="dateDiv">
+                <span style="font-size: 20px; ">
+                    Select date:
+                </span>
+
+                <input name="date" type="date" style="width: 200px;
+                margin-left: 100px;
+                border-radius: 10px;
+                border-width: 1px">
+            </div>
+        </div>
+
+        <div class="row" style="margin: 0% 0 0 29% ">
+            <div id="timeDiv">
+                <span  style="font-size: 20px; ">
+                    Select time:
+                </span>
+
+                <select name="time" style="width: 200px;margin-left: 100px; border-radius: 10px; border-width: 1px">
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" style="margin: 0% 0 0 29% ">
+            <div id="classDiv">
+                <span  style="font-size: 20px; ">
+                    Select class:
+                </span>
+
+                <select name="className" style="width: 200px;margin-left: 100px; border-radius: 10px; border-width: 1px">
+                    <option>Gain muscle mass</option>
+                    <option>Lose weight</option>
+                    <option>Maintain shape</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" style="margin: 0% 0 0 29%">
+            <div id="passwordDiv">
+                <span style="font-size: 20px; ">
+                    Your password:
+                </span>
+
+                <input name="password" type="password" style="width: 200px;
+                margin-left:71px; border-radius: 10px; border-width: 1px">
+
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center">
+            <button type="submit"
+                     style="width: 200px;
+                     margin-left: 39.5%;
+                     margin-bottom: 2%;
+                     border-radius: 10px;
+                     color: #212529;
+                     font-size: 18px;
+                     font-weight: bold">
+                Book class
+            </button>
+        </div>
+    </form>
+</main>
+
+
+<footer>
+    <div th:include="fragments/footer :: footer">Footer</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

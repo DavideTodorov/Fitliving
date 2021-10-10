@@ -16,8 +16,5 @@ public class homeController {
         return "aboutUs";
     }
 
-    @GetMapping("/classes")
-    public String goToClasses() {
-        return "classes";
-    }
+
 }
