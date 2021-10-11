@@ -5,7 +5,7 @@
 }
 
 .row{
-    margin: 0% 0 0 30%;
+    margin: 0% 30% 0 30%;
 }
 
 #dateDiv{
@@ -42,4 +42,10 @@
     color: #212529;
     font-size: 18px;
     font-weight: bold;
+}
+
+#note{
+    margin: 2% 0% 4% 0%;
+    padding-bottom: 1%;
+    text-align: center;
 }
