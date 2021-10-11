@@ -5,7 +5,7 @@
     <title>Fitliving - Book classes</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="styles/header-footer-style.css">
-    <link rel="stylesheet" href="styles/bookClasses.css">
+    <link rel="stylesheet" href="styles/bookClasses-style.css">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 <main>
 
     <form id= "form" class="bookForm" method="post" th:action="@{/bookClasses}">
-        <div class="row" style="margin: 0% 0 0 29% ">
+        <div class="row">
             <div id="dateDiv">
                 <span style="font-size: 20px; ">
                     Select date:
@@ -30,9 +30,9 @@
             </div>
         </div>
 
-        <div class="row" style="margin: 0% 0 0 29% ">
+        <div class="row">
             <div id="timeDiv">
-                <span  style="font-size: 20px; ">
+                <span style="font-size: 20px; ">
                     Select time:
                 </span>
 
@@ -52,13 +52,13 @@
             </div>
         </div>
 
-        <div class="row" style="margin: 0% 0 0 29% ">
+        <div class="row">
             <div id="classDiv">
                 <span  style="font-size: 20px; ">
                     Select class:
                 </span>
 
-                <select name="className" style="width: 200px;margin-left: 100px; border-radius: 10px; border-width: 1px">
+                <select id="className" name="className">
                     <option>Gain muscle mass</option>
                     <option>Lose weight</option>
                     <option>Maintain shape</option>
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="row" style="margin: 0% 0 0 29%">
+        <div class="row">
             <div id="passwordDiv">
                 <span style="font-size: 20px; ">
                     Your password:
@@ -79,14 +79,7 @@
         </div>
 
         <div class="row" style="text-align: center">
-            <button type="submit"
-                     style="width: 200px;
-                     margin-left: 39.5%;
-                     margin-bottom: 2%;
-                     border-radius: 10px;
-                     color: #212529;
-                     font-size: 18px;
-                     font-weight: bold">
+            <button id="submitBtn" type="submit">
                 Book class
             </button>
         </div>

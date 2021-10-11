@@ -1,0 +1,45 @@
+.bookForm{
+    margin: 8.5% 17% 8.5% 17%;
+    background-color: #cfccd4;
+    border-radius: 12px
+}
+
+.row{
+    margin: 0% 0 0 30%;
+}
+
+#dateDiv{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 15px;
+}
+
+#timeDiv{
+    margin-bottom: 4%;
+}
+
+#classDiv{
+    margin-bottom: 4%;
+}
+
+#passwordDiv{
+    margin-bottom: 4%;
+}
+
+
+#className{
+    width: 200px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+#submitBtn{
+    width: 200px;
+    margin-left: 14%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: #212529;
+    font-size: 18px;
+    font-weight: bold;
+}
