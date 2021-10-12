@@ -3,8 +3,8 @@ package com.fitliving.fitliving.model.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "answer")
-public class Answer {
+@Table(name = "postAnswer")
+public class PostAnswer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,12 +14,12 @@ public class Answer {
     private String answerText;
 
     @ManyToOne
-    private Question question;
+    private PostQuestion postQuestion;
 
     @ManyToOne
     private User user;
 
-    public Answer() {
+    public PostAnswer() {
     }
 
     public Long getId() {
@@ -38,12 +38,12 @@ public class Answer {
         this.answerText = answerText;
     }
 
-    public Question getQuestion() {
-        return question;
+    public PostQuestion getPostQuestion() {
+        return postQuestion;
     }
 
-    public void setQuestion(Question question) {
-        this.question = question;
+    public void setPostQuestion(PostQuestion postQuestion) {
+        this.postQuestion = postQuestion;
     }
 
     public User getUser() {

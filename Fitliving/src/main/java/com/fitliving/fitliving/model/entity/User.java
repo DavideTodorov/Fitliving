@@ -34,16 +34,16 @@ public class User {
     private List<TrainingClass> trainingClasses;
 
     @OneToMany(mappedBy = "user")
-    private List<Question> questions;
+    private List<PostQuestion> postQuestions;
 
     @OneToMany(mappedBy = "user")
-    private List<Answer> answers;
+    private List<PostAnswer> postAnswers;
 
     public User() {
         this.userRole = new ArrayList<>();
         this.trainingClasses = new ArrayList<>();
-        this.questions = new ArrayList<>();
-        this.answers = new ArrayList<>();
+        this.postQuestions = new ArrayList<>();
+        this.postAnswers = new ArrayList<>();
     }
 
     public Long getId() {
@@ -110,19 +110,19 @@ public class User {
         this.trainingClasses = trainingClasses;
     }
 
-    public List<Question> getQuestions() {
-        return questions;
+    public List<PostQuestion> getPostQuestions() {
+        return postQuestions;
     }
 
-    public void setQuestions(List<Question> questions) {
-        this.questions = questions;
+    public void setPostQuestions(List<PostQuestion> postQuestions) {
+        this.postQuestions = postQuestions;
     }
 
-    public List<Answer> getAnswers() {
-        return answers;
+    public List<PostAnswer> getPostAnswers() {
+        return postAnswers;
     }
 
-    public void setAnswers(List<Answer> answers) {
-        this.answers = answers;
+    public void setPostAnswers(List<PostAnswer> postAnswers) {
+        this.postAnswers = postAnswers;
     }
 }

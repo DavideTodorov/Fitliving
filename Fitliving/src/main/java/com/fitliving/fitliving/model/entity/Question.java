@@ -1,9 +1,6 @@
 package com.fitliving.fitliving.model.entity;
 
 import javax.persistence.*;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "question")
@@ -13,21 +10,14 @@ public class Question {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "questionName")
-    private String questionName;
+    @Column(name = "questionTitle")
+    private String questionTitle;
 
-    @Column(name = "publishedOn")
-    private Instant publishedOn;
+    @Column(name = "questionText", columnDefinition = "TEXT")
+    private String questionText;
 
-    @OneToMany(mappedBy = "question")
-    private List<Answer> answers;
-
-    @ManyToOne
-    private User user;
-
-    public Question() {
-        this.answers = new ArrayList<>();
-    }
+    @OneToOne
+    private User userAsked;
 
     public Long getId() {
         return id;
@@ -37,35 +27,27 @@ public class Question {
         this.id = id;
     }
 
-    public String getQuestionName() {
-        return questionName;
+    public String getQuestionTitle() {
+        return questionTitle;
     }
 
-    public void setQuestionName(String questionName) {
-        this.questionName = questionName;
+    public void setQuestionTitle(String questionTitle) {
+        this.questionTitle = questionTitle;
     }
 
-    public Instant getPublishedOn() {
-        return publishedOn;
+    public String getQuestionText() {
+        return questionText;
     }
 
-    public void setPublishedOn(Instant publishedOn) {
-        this.publishedOn = publishedOn;
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
     }
 
-    public List<Answer> getAnswers() {
-        return answers;
+    public User getUserAsked() {
+        return userAsked;
     }
 
-    public void setAnswers(List<Answer> answers) {
-        this.answers = answers;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
+    public void setUserAsked(User userAsked) {
+        this.userAsked = userAsked;
     }
 }
